@@ -1,2 +1,3 @@
 # Programacion-Orientada-a-Objetos-POO-
-Java
+
+**Ejercicio Practica 1** - *Por terminar* - [Github](https://github.com/SolidusStrange/Programacion-Orientada-a-Objetos-POO-/tree/main/EjercicioPractica1Libreria)
