@@ -1,4 +1,3 @@
-
 package ejerciciopractica1;
 
 public abstract class Recurso {

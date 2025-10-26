@@ -13,6 +13,10 @@ public class Cliente implements Mostrable{
     // Constructor (para acceder a los datos)
 
     public Cliente(String rut, String nombre, String apellidoPaterno, String apellidoMaterno, String alias, String correo, String password) {
+        if (rut.isEmpty() || nombre.isEmpty() || apellidoPaterno.isEmpty() || apellidoMaterno.isEmpty() || alias.isEmpty() || correo.isEmpty() || password.isEmpty()){
+            throw new IllegalArgumentException("Ningun campo puede estar vacio");
+        }
+            
         this.rut = rut;
         this.nombre = nombre;
         this.apellidoPaterno = apellidoPaterno;
@@ -21,8 +25,6 @@ public class Cliente implements Mostrable{
         this.correo = correo;
         this.password = generarPassword();
     }
-
-    // Getters y setters (encapsulacion)
     
     // Getters y Setters (encapsulación)
     public String getRut() { return rut; }
@@ -56,7 +58,6 @@ public class Cliente implements Mostrable{
     
     // Implementación del metodo interfaz
     
-    
     @Override
     public void mostrarInformacion(){
         System.out.println("Cliente: " + nombre + apellidoPaterno + " (" + alias + ")");
@@ -66,3 +67,4 @@ public class Cliente implements Mostrable{
         System.out.println("----------------------------------");
     }
 }
+
